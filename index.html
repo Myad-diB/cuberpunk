@@ -2,10 +2,94 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CUBERPUNK promo</title>
+    <meta name="discription" content="Лендинг, посвященный игре Cyberpunk 2077">
+    <meta name="keywords" content="Игра будущего">
+    <meta name="vievport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberpunk promo</title>
+    <link rel="preconect" href="http://fonts.googleapis.com"/>
+    <link rel="preconect" href="http://fonts.gstatic.com"  crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"/>
+    <link rel="stylesheet/less" type="text/less" href="less/styles.less"/>
+    <link rel="stylesheet/less" type="text/css" href="css.uikit.css"/>
+    <script src="JS/uikit.JS"></script>
+    <script src="JS/uikit.icons"></script>
+    <script src="JS/less.JS"></script>
 </head>
 <body>
-    
+    <header class="header">
+        <div class="conteiner header__container">
+            <a href="#">
+                <img class="header__logocuder" src="img/Cyberpunk_2077_logo 1.svg" alt="кибкрпанк лого"/>
+            </a>
+            <ul class="header__social">
+                <Li><a href="#" aria-label="Киберпанк на ютубе"><img class="header__logosocial" src="img/youtube logo.svg" alt="Логотип ютуб"></a></Li>
+                <Li><a href="#" aria-label="Киберпанк в VK"><img class="header__logosocial" src="img/vk logo.svg" alt="Логотип ВК"></Li>
+                <Li><a href="#" aria-label="Киберпанк на фейсбук"><img class="header__logosocial" src="img/facebook-rect logo.svg" alt="Логотип фейсбук"></Li>
+                <Li><a href="#" aria-label="Киберпанк на твитер"><img class="header__logosocial" src="img/twitter-square logo.svg" alt="Логотип твиттер"></Li>
+                <Li><a href="#" aria-label="Киберпанк на инстаграмм"><img class="header__logosocial" src="img/instagram-square logo.svg" alt="Логотип инстаграмм"></Li>
+                <Li><a href="#" aria-label="Киберпанк на твиче"><img class="header__logosocial" src="img/twitch logo.svg" alt="Логотип твитч"></Li>
+            </ul>
+        </div>
+    </header>
+    <main class="main">
+        <section class="hero">
+            <div class="hero__slider uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slidershow="autoplay: true, autoplay-interval: 3000; animation: fade">
+               <ul class="uk-slidershow-items">
+                <li><img src="img/hero1-desktop.png" alt="фото1"></li>
+                <li><img src="img/hero2-desktop.png" alt="фото2"></li>
+                <li><img src="img/hero3-desktop.png" alt="фото3"></li>
+               </ul> 
+            </div>
+            <div class="hero__info">
+                <div class="conteiner">
+                    <h2 class="hero__info-title">Доступно на всех платформах</h2>
+                    <a href="#" class="hero__info-link">Узнать больше</a>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="conteiner">
+                <h2 class="about__title">Найт-сити изменит тебя навсегда</h2>
+                <p class="about__description"><span class="about__description-title">Cyberpunk2077</span>— приключенческая ролевая игра, действие которой происходит в мегаполисе Найт-Сити, где власть, роскошь и модификации тела ценятся выше всего. Ты играешь за V, наёмника в поисках устройства, позволяющего обрести бессмертие. Ты сможешь менять киберимпланты, навыки и стиль игры своего персонажа, исследуя открытый мир, где твои поступки влияют на ход сюжета и всё, что тебя окружает.</p>
+                <div class="about__images">
+                    <ul class="about__left">
+                        <li><img src="img/about1.png" alt="найт сити 1"></li>
+                        <li><img src="img/about2.png" alt="найт сити 2"></li>
+                        <li class="about_listposition"><img class="about__imgbottom" src="img/about3.png" alt="найт сити 3"</li>
+                    </ul>
+                </div> 
+            </div>
+        </section>
+        <section class="game">
+            <div class="conteiner">
+                <div class="game__wrap">
+                    <div class="game__leftwrap">
+                        <h2 class="game__title">Играй и выигрывай</h2>
+                        <p class="game__text">Играй в <span class="game__textdecoration">Cyberpunk2077</span>и получи возможность выйграть консоль<span class="game__textdecoration">Xbox series X</span>или<span class="game__textdecoration">Sony Playstation 5!</span> Заполни форму ниже и приложи скриншот о покупке игры. Итоги розыгрыша будут подведены 1 февраля. Удачи! ;)</p>
+                        <form action="#" class="game__form">
+                            <input type="text" name="name" placeholder="Как тебя зовут?">
+                            <input type="email" name="email" class="form__input" placeholder="Твой email">
+                            <label class="form-lable">
+                                <input type="file" class="form-lable__file">
+                                <span class="form-lable__text">Прекрипить скриншот</span>
+                                <span class="form-lable__images">.png / .jpg / .pdf</span> 
+                            </label>
+                            <button class="form__btn">Отправить</button>
+                            <label class="form__checkbox checkbox">
+                                <input type="checkbox" class="checkbox" checked>
+                                <span class="checkbox_tex">Согласен на обработку персональных данных</span>
+                            </label> 
+                        </form>    
+                    </div>
+                    <div class="game__rightwrap">
+                        <ul class="game__imglist">
+                            <li><img class="game__img discount" src="img/Xbox.png" alt="Xbox"></li>
+                            <li><img class="game__img discount" src="img/playstation.png" alt="плайстэйшн"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 </body>
 </html>
