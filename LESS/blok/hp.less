@@ -4,9 +4,9 @@
 }
 .hp__container {
     display: flex;
-    flex-direction: row; 
-    justify-content: space-between; 
-    flex-wrap: wrap; 
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
     @media (min-width: @desktop-width) {
         display: grid;
         grid-template-columns: 50% 50%;
@@ -37,7 +37,7 @@
 .hp__imgleftitem {
     margin-bottom: 25px;
     @media (min-width: @desktop-width) {
-        margin-bottom: 15px; /*меняем внешний нижний отступ*/
+        margin-bottom: 15px; 
     }
 }
 .hp__imgleftmonitor {
@@ -88,6 +88,7 @@
     @media (min-width: @desktop-width) {
         font-size: 52px;
         padding-right: 50px;
+    }
 }
 .hp__textdeskription {
     padding: 0;
@@ -125,10 +126,10 @@
     word-break: break-word;
     padding-right: 5px;
     @media (min-width: @desktop-width) {
-        font-size: 18px; 
+        font-size: 18px;
     }
 }
-.hp__aboutlistitem:nth-child(1)::before { 
+.hp__aboutlistitem:nth-child(1)::before {
     position: absolute;
     left: 0;
     content: "";
@@ -136,7 +137,7 @@
     height: 24px;
     background-image:url('@{imagePath}color_lens.svg');
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
 }
 .hp__aboutlistitem:nth-child(2)::before {
     position: absolute;
@@ -177,6 +178,6 @@
     word-break: break-word;
     padding-right: 5px;
     @media (min-width: @desktop-width) {
-        width: 194px; 
+        width: 194px;
     }
 }
